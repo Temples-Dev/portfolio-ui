@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", "Montserrat", sans-serif;
+  color: gray;
+  background-color: #222438;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+nav span {
+  font-weight: 600;
+  font-style: italic;
+}
+nav span b {
+  color: #f54854;
+}
+nav span:hover {
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style-type: none;
+  margin: 0 25px;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul li a:hover {
+  cursor: pointer;
+  color: white;
+  border-bottom: 3px solid white;
+}
+
+section.welcome {
+  display: flex;
+  flex-direction: column;
+  margin: 3% 10%;
+}
+section.welcome h1 {
+  margin-bottom: 10px;
+  color: white;
+}
+section.welcome pre {
+  line-height: 28px;
+  color: rgba(238, 238, 238, 0.7333333333);
+}
+section.welcome button {
+  width: fit-content;
+  padding: 10px 30px;
+  color: white;
+  background-color: #f54854;
+  border-style: none;
+  outline: none;
+}
+section.welcome button:hover {
+  background-color: rgba(191, 38, 38, 0.678);
+  border-radius: 4px;
+}
+
+section.skills {
+  margin: 3% 10%;
+}
+section.skills .skillhead {
+  padding: 10px 0;
+}
+section.skills .skillhead h6 {
+  margin-bottom: 10px;
+  color: white;
+}
+section.skills .skillhead h1 {
+  font-weight: 700;
+  color: #f54854;
+  margin-bottom: 10px;
+}
+section.skills .skillhead h1 hr {
+  width: 50px;
+  margin-top: 10px;
+}
+
+section.skillgroup {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+section.skillgroup .skillitem {
+  padding: 40px;
+  background-color: #292c3e;
+  box-shadow: 4px 8px 12px rgba(42, 44, 61, 0.5137254902);
+}
+section.skillgroup .skillitem i {
+  color: #f54854;
+}
+section.skillgroup .skillitem p,
+section.skillgroup .skillitem h4 {
+  margin-bottom: 10px;
+  background-color: #292c3e;
+  color: white;
+}
+
+footer {
+  margin: 3% 10%;
+}
+footer .form {
+  display: flex;
+  flex-direction: column;
+  width: 66.66%;
+}
+footer .form h3 {
+  color: #f54854;
+}
+footer .form input {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  border-color: #eee;
+  border-style: solid;
+}
+footer .form input::placeholder {
+  padding: 20px;
+}
+footer .form input:focus {
+  border-color: rgba(191, 38, 38, 0.678);
+}
+footer .form button {
+  display: flex;
+  width: 33.33%;
+  color: white;
+  border-style: solid;
+  background-color: #f54854;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-style: none;
+  border-radius: 5px;
+  font-weight: 900;
+  margin-left: auto;
+}
+footer .form button:hover {
+  background-color: rgba(191, 38, 38, 0.678);
+}
+footer .form button i {
+  color: white;
+  margin-left: 5px;
+  background-color: #f54854;
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  section {
+    margin: 30px 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    margin-top: 10px;
+  }
+  ul li {
+    margin: 10px;
+  }
+  section.skillgroup {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  nav span {
+    font-size: 1.5rem;
+  }
+  ul li {
+    margin: 5px;
+  }
+  section.skillgroup {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
