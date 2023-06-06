@@ -1,0 +1,133 @@
+.welcome {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.welcome__greeting {
+  color: var(--color-white);
+  line-height: 1.5rem;
+  font-size: var(--size-base);
+}
+
+.welcome__msg {
+  color: var(--color-primary);
+  font-size: var(--size-xs);
+  text-align: justify;
+}
+
+.welcome__btn {
+  width: fit-content;
+  padding: 5px 15px;
+}
+
+.welcome__btn:hover {
+  background-color: hsla(0, 92%, 47%, 0.842);
+}
+
+.welcome__btn-color {
+  color: var(--color-primary);
+}
+
+/* base media queries */
+
+/* xs  mobile*/
+@media (min-width: 475px) {
+  .welcome {
+    align-items: center;
+    gap: 0.999rem;
+  }
+
+  .welcome__greeting {
+    align-self: flex-start;
+  }
+
+  .welcome__msg {
+    max-width: 50ch;
+    line-height: 1.5rem;
+    font-size: var(--size-xs);
+  }
+
+  .welcome__btn {
+    align-self: flex-start;
+  }
+}
+
+/* sm  mobile*/
+@media (min-width: 640px) {
+  @media (min-width: 475px) {
+    .welcome {
+      align-items: center;
+      gap: 0.999rem;
+    }
+
+    .welcome__greeting {
+      align-self: flex-start;
+    }
+
+    .welcome__msg {
+      max-width: 60ch;
+      line-height: 2rem;
+    }
+
+    .welcome__btn {
+      align-self: flex-start;
+    }
+  }
+}
+
+/* md tablet*/
+@media (min-width: 768px) {
+  .welcome {
+    align-items: flex-start;
+    gap: 0.999rem;
+  }
+
+  .welcome__greeting {
+    align-self: flex-start;
+  }
+
+  .welcome__msg {
+    max-width: 70ch;
+    margin-left: 3rem;
+    line-height: 2rem;
+    font-size: var(--size-base);
+  }
+
+  .welcome__btn {
+    align-self: flex-start;
+  }
+}
+
+/* lg laptop*/
+@media (min-width: 1024px) {
+  .welcome {
+    align-items: flex-start;
+    gap: 0.999rem;
+  }
+
+  .welcome__greeting {
+    align-self: flex-start;
+    margin-left: 6rem;
+  }
+
+  .welcome__msg {
+    max-width: 55ch;
+    margin-left: 8rem;
+    line-height: 2rem;
+    font-size: var(--size-xl);
+  }
+
+  .welcome__btn {
+    align-self: flex-start;
+    margin-left: 6rem;
+  }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

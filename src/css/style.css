@@ -1,0 +1,7 @@
+/* main css file containing all styles */
+
+@import url('components/index.css');
+@import url('defaults/variables.css');
+@import url('utils/util.css');
+
+

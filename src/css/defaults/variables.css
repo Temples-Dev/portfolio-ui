@@ -1,0 +1,45 @@
+/* all css variables is set up here */
+/* import this into the style.css  */
+/* it should be after the components folder */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Montserrat:wght@400;700&display=swap");
+@import url('general.css');
+
+:root{
+
+    /* colors */
+    --color-white: #fff;
+    --color-black: #000;
+    --bg-color: #222438;
+    --color-primary: rgb(206, 206, 206);
+    --color-secondary: #f54854;
+
+    /* fonts - typography */
+   --font-family: "Lato", "Montserrat", sans-serif;
+
+    /* box-shadows */
+
+
+    /* rounded corners */
+
+    /* font-weights */
+
+
+
+  /*font-sizes */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
